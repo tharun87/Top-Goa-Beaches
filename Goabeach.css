@@ -1,0 +1,124 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+height: 100%;
+width: 100%;display: flex;
+}
+
+.container{
+width: 90vw;
+padding: 1rem 1rem;
+margin: 0 auto;
+}
+
+.headerbox{
+margin-bottom: 2rem;
+}
+
+header{
+text-align: center;
+}
+
+header h2, header p{
+padding: 8px;
+}
+
+.contentbox{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(120px, 240px));
+gap: 1.5rem;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+}
+
+.Card{
+height: 21.5rem;
+border: 1px solid rgb(222, 209, 209);
+border-radius: 5px;
+box-shadow: 0px 0px 3px rgb(41, 39, 39);
+}
+
+.imagecontainer{
+position: relative;
+overflow: hidden;
+height: 9.5rem;
+}
+
+.beachimage {
+object-fit: cover;
+object-position: center;
+position: absolute;
+height: 100%;
+width: 100%;
+border-radius: 5px 5px 0 0;
+}
+
+.Card:hover .imagecontainer img {
+transform: scale(1.2);
+transition-duration: 300ms;
+}
+
+.reviewbox{
+display: flex;
+flex-direction: column;
+padding: 8px;
+gap: 8px;
+}
+
+.reviewbox a{
+text-decoration: none;
+color: rgb(28, 26, 26);
+}
+
+.reviewbox a:hover{
+color: rgb(40, 40, 206);
+}
+
+.author{
+display: flex;
+padding: 0.6rem;
+justify-content: space-between;
+align-items: flex-end;
+}
+
+.authorname{
+display: flex;
+gap: 5px;
+align-items: flex-end;
+}
+
+.avatharcontainer{
+height: 2.5rem;
+width: 2.5rem;
+overflow: hidden;
+border: 1px solid rgb(220, 200, 200);
+border-radius: 50%;
+background-color: rgba(236, 227, 227, 0.397);
+}
+
+.authorname img{
+width: 100%;
+}
+
+#name{
+color: blue;
+}
+
+#date{
+color: rgb(111, 103, 103);
+font-size: 0.9rem;
+}
+
+#profession{
+height: 1.5rem;
+font-size: 0.9rem;
+border: 1px solid rgb(154, 137, 137);
+border-radius: 2px;
+color: rgb(101, 94, 94);
+padding: 0.25rem;
+}
