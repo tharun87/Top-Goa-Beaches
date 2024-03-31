@@ -1,124 +1,240 @@
 *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    height: 100%;
+    width: 100%;
+    }
 
-body{
-height: 100%;
-width: 100%;display: flex;
-}
+    header{
+        width: 100%;
+        position: fixed;
+        font-family: sans-serif;
+        z-index: 10000;
+        top: 0;
+        left: 0;
+        border: 1px solid rgb(168, 154, 154);
+    }
 
-.container{
-width: 90vw;
-padding: 1rem 1rem;
-margin: 0 auto;
-}
+    .inquiries{
+        width: 100%;
+        padding: 0.4rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        background-color: #e12b9b;
+        background-image: linear-gradient(225deg, #9a1466 0%, #743aa4 50%, #0f93ea 100%);
+        color: white;
+    }
 
-.headerbox{
-margin-bottom: 2rem;
-}
+    #phoneno{
+        display: flex;
+    }
 
-header{
-text-align: center;
-}
+    .leftbox img, #scheduleimg{
+        width: 1.2rem;
+        margin-right: 0.3rem;
+        background-color: white;
+        border-radius: 5px;
+    }
 
-header h2, header p{
-padding: 8px;
-}
+    #lock{
+        width: 0.9rem;
+        margin-right: 0.3rem;
+        background-color: white;
+        border-radius: 5px;
+    }
 
-.contentbox{
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(120px, 240px));
-gap: 1.5rem;
-justify-content: center;
-align-items: center;
-margin-top: 1rem;
-}
+    .rightbox{
+        display: flex;
+    }
 
-.Card{
-height: 21.5rem;
-border: 1px solid rgb(222, 209, 209);
-border-radius: 5px;
-box-shadow: 0px 0px 3px rgb(41, 39, 39);
-}
+    .rightbox a{
+        text-decoration: none;
+        color: white;
+    }
 
-.imagecontainer{
-position: relative;
-overflow: hidden;
-height: 9.5rem;
-}
+    .topnavbar{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: white;
+    }
 
-.beachimage {
-object-fit: cover;
-object-position: center;
-position: absolute;
-height: 100%;
-width: 100%;
-border-radius: 5px 5px 0 0;
-}
+    #goatourismlogo img{
+        width: 6rem;
+        height: 5rem;
+    }
 
-.Card:hover .imagecontainer img {
-transform: scale(1.2);
-transition-duration: 300ms;
-}
+    #goatourismlogo{
+        display: flex;
+        align-items: center;
+    }
 
-.reviewbox{
-display: flex;
-flex-direction: column;
-padding: 8px;
-gap: 8px;
-}
+    .navlinks{
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .navlinks a{
+        color: black;
+        text-decoration: none;
+    }
 
-.reviewbox a{
-text-decoration: none;
-color: rgb(28, 26, 26);
-}
+    .topnavbar a:hover{
+        color: blue;
+    }
 
-.reviewbox a:hover{
-color: rgb(40, 40, 206);
-}
+    .container{
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 120px;
+    }
+    
+    .headerbox{
+    margin-bottom: 2rem;
+    text-align: center;
+    }
+    
+    .headerbox h2, .headerbox p{
+    padding: 8px;
+    }
+    
+    .contentbox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 240px));
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    }
+    
+    .Card{
+    height: 21.5rem;
+    border: 1px solid rgb(222, 209, 209);
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgb(41, 39, 39);
+    }
+    
+    .imagecontainer{
+    position: relative;
+    overflow: hidden;
+    height: 9.5rem;
+    }
+    
+    .beachimage {
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    }
+    
+    .Card:hover .imagecontainer img {
+    transform: scale(1.2);
+    transition-duration: 300ms;
+    }
+    
+    .reviewbox{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+    }
+    
+    .reviewbox a{
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    }
+    
+    .reviewbox a:hover{
+    color: rgb(40, 40, 206);
+    }
+    
+    .author{
+    display: flex;
+    padding: 0.6rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    }
+    
+    .authorname{
+    display: flex;
+    gap: 5px;
+    align-items: flex-end;
+    }
+    
+    .avatharcontainer{
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid rgb(220, 200, 200);
+    border-radius: 50%;
+    background-color: rgba(236, 227, 227, 0.397);
+    }
+    
+    .authorname img{
+    width: 100%;
+    }
+    
+    #name{
+    color: blue;
+    }
+    
+    #date{
+    color: rgb(111, 103, 103);
+    font-size: 0.9rem;
+    }
+    
+    #profession{
+    height: 1.5rem;
+    font-size: 0.9rem;
+    border: 1px solid rgb(154, 137, 137);
+    border-radius: 2px;
+    color: rgb(101, 94, 94);
+    padding: 0.25rem;
+    }
 
-.author{
-display: flex;
-padding: 0.6rem;
-justify-content: space-between;
-align-items: flex-end;
-}
+    footer{
+        width: 100%;
+        margin-top: 5rem;
+        display: flex;
+        background-image: linear-gradient( 111.4deg,  rgb(48, 48, 90) 6.5%, rgb(43, 42, 67) 93.2% );
+        color: white;
+        font-family: sans-serif;
+    }
 
-.authorname{
-display: flex;
-gap: 5px;
-align-items: flex-end;
-}
+    .topattractions, .hotelbookings,.usefullinks,.contactinfo{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+    }
 
-.avatharcontainer{
-height: 2.5rem;
-width: 2.5rem;
-overflow: hidden;
-border: 1px solid rgb(220, 200, 200);
-border-radius: 50%;
-background-color: rgba(236, 227, 227, 0.397);
-}
+    .hotelbookings ul, .placelinks ul, .usefullinks ul{
+        display: flex;
+        flex-direction: column;
+        list-style:none;
+        gap: 0.4rem;
+    }
 
-.authorname img{
-width: 100%;
-}
+    footer ul li:before{
+        content: ">";
+        margin-right: 5px;
+    }
 
-#name{
-color: blue;
-}
+    footer a{
+        text-decoration: none;
+        color: white;
+    }
 
-#date{
-color: rgb(111, 103, 103);
-font-size: 0.9rem;
-}
-
-#profession{
-height: 1.5rem;
-font-size: 0.9rem;
-border: 1px solid rgb(154, 137, 137);
-border-radius: 2px;
-color: rgb(101, 94, 94);
-padding: 0.25rem;
-}
+    .contactdetails{
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
